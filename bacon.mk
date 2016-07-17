@@ -65,6 +65,71 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     charger_res_images
 
+# Custom
+PRODUCT_PACKAGES += \
+    7z \
+    aprotoc \
+    aprotoc-test-nano-params \
+    bash \
+    brctl \
+    ffmpeg \
+    fsck.exfat \
+    fsck.ntfs \
+    htop \
+    lib7z \
+    libavcodec \
+    libavdevice \
+    libavfilter \
+    libavformat \
+    libavresample \
+    libavutil \
+    libbridge \
+    libexfat \
+    libexfat_fsck_static \
+    libexfat_mkfs_static \
+    libexfat_mount_static \
+    libexfat_static \
+    liblzo \
+    liblzo-static \
+    libminipigz_static \
+    libncurses \
+    libntfs-3g \
+    libntfs-3g_static \
+    libntfs3g_fsck_static \
+    libntfs3g_mkfs_main \
+    libntfs3g_mount_static \
+    libpostproc \
+    libprotobuf-c \
+    libprotobuf-cpp-full \
+    libprotobuf-cpp-full-gnustl-rtti \
+    libprotobuf-cpp-lite \
+    libprotobuf-java-lite \
+    libprotobuf-java-micro \
+    libprotobuf-java-nano \
+    libswresample \
+    libswscale \
+    libtar \
+    libtruezip \
+    libxslt \
+    libzopfli \
+    minitar \
+    mkfs.exfat \
+    mkfs.ntfs \
+    mkyaffs2image \
+    mount.exfat \
+    mount.ntfs \
+    nano \
+    pigz \
+    powerdebug \
+    powertop \
+    qrngtest \
+    rsync \
+    unrar \
+    unzip \
+    vim \
+    vimrc \
+    zip
+
 # Dalvik/HWUI
 $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-dalvik-heap.mk)
 $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-hwui-memory.mk)
