@@ -73,6 +73,7 @@ PRODUCT_PACKAGES += \
     aprotoc-test-nano-params \
     bash \
     brctl \
+    curl \
     ffmpeg \
     fsck.exfat \
     fsck.ntfs \
@@ -85,6 +86,7 @@ PRODUCT_PACKAGES += \
     libavresample \
     libavutil \
     libbridge \
+    libcurl \
     libexfat \
     libexfat_fsck_static \
     libexfat_mkfs_static \
