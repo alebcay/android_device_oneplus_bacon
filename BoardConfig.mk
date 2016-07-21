@@ -69,6 +69,7 @@ AUDIO_FEATURE_ENABLED_LOW_LATENCY_CAPTURE := true
 AUDIO_FEATURE_ENABLED_MULTI_VOICE_SESSIONS := true
 AUDIO_FEATURE_ENABLED_NEW_SAMPLE_RATE := true
 AUDIO_FEATURE_LOW_LATENCY_PRIMARY := true
+AUDIO_FEATURE_ENABLED_COMPRESS_VOIP := false
 USE_CUSTOM_AUDIO_POLICY := 1
 
 # Bluetooth
@@ -136,8 +137,8 @@ VSYNC_EVENT_PHASE_OFFSET_NS := 2500000
 SF_VSYNC_EVENT_PHASE_OFFSET_NS := 0000000
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_msm
-TARGET_LIBINIT_DEFINES_FILE := device/oneplus/bacon/init/init_bacon.cpp
+TARGET_INIT_VENDOR_LIB := libinit_bacon
+TARGET_RECOVERY_DEVICE_MODULES := libinit_bacon
 
 # Keymaster
 TARGET_KEYMASTER_WAIT_FOR_QSEE := true
@@ -186,11 +187,13 @@ WPA_SUPPLICANT_VERSION           := VER_0_8_X
 # Inherit from QC proprietary
 ifneq ($(QCPATH),)
 -include $(QCPATH)/common/msm8974/BoardConfigVendor.mk
+endif
 
 # QCNE
+BOARD_USES_QCNE := true
+
 ifeq ($(BOARD_USES_QCNE),true)
 TARGET_LDPRELOAD := libNimsWrap.so
-endif
 endif
 
 -include vendor/oneplus/bacon/BoardConfigVendor.mk
