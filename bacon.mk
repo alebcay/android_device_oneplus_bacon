@@ -21,6 +21,10 @@ endif
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay vendor/extra/overlays/phone-1080p
 
+# API (for CTS backward compatibility)
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.product.first_api_level=19
+
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/acdb/MTP_Bluetooth_cal.acdb:system/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb \
