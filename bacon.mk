@@ -56,7 +56,9 @@ TARGET_SCREEN_WIDTH := 1080
 
 # Camera
 PRODUCT_PACKAGES += \
-    camera.bacon
+    camera.bacon \
+    CameraNext \
+    GalleryNext
 
 # Build SnapDragon Camera Inline
 #PRODUCT_PACKAGES += \
