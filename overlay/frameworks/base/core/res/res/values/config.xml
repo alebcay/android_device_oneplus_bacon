@@ -401,4 +401,7 @@
 
     <!-- Proximity check on screen on default -->
     <bool name="config_proximityCheckOnWakeEnabledByDefault">true</bool>
+
+    <!-- Enable blur support -->
+    <bool name="config_ui_blur_enabled">true</bool>
 </resources>
