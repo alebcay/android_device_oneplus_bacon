@@ -52,6 +52,7 @@ PRODUCT_PACKAGES += \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libqcomvoiceprocessingdescriptors \
+    Music \
     tinymix
 
 # Boot animation
