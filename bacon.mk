@@ -315,6 +315,8 @@ PRODUCT_PACKAGES += \
 
 # System properties
 PRODUCT_PROPERTY_OVERRIDES += \
+    af.fast_track_multiplier=1 \
+    audio_hal.period_size=192 \
     persist.hwc.mdpcomp.enable=true \
     ro.use_data_mgrd=true \
     persist.data.netmgrd.qos.enable=true \
