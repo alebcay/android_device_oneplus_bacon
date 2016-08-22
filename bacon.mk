@@ -171,6 +171,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sec_config:system/etc/sec_config
 
+# Kernel Adiutor Mod
+PRODUCT_PACKAGES += \
+    KernelAdiutorMod
+
 # Keystore
 PRODUCT_PACKAGES += \
     keystore.msm8974
