@@ -65,10 +65,6 @@ PRODUCT_PACKAGES += \
     CameraNext \
     GalleryNext
 
-# Build SnapDragon Camera Inline
-#PRODUCT_PACKAGES += \
-#    Snap
-
 # Charger
 PRODUCT_PACKAGES += \
     charger_res_images
@@ -178,6 +174,16 @@ PRODUCT_COPY_FILES += \
 # Keystore
 PRODUCT_PACKAGES += \
     keystore.msm8974
+
+# Keyhandler
+PRODUCT_PACKAGES += \
+    ConfigPanel \
+    com.cyanogenmod.keyhandler
+
+PRODUCT_SYSTEM_SERVER_JARS += com.cyanogenmod.keyhandler
+
+# never dexopt the keyhandler
+$(call add-product-dex-preopt-module-config,com.cyanogenmod.keyhandler,disable)
 
 # Lights
 PRODUCT_PACKAGES += \
@@ -330,6 +336,3 @@ $(call inherit-product-if-exists, vendor/oneplus/bacon/bacon-vendor.mk)
 ifneq ($(QCPATH),)
 $(call inherit-product-if-exists, $(QCPATH)/prebuilt_HY11/target/product/msm8974/prebuilt.mk)
 endif
-
-# Inherit from oppo-common
-$(call inherit-product, device/oppo/common/common.mk)
